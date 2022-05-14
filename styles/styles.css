@@ -32,7 +32,7 @@
   --color-grey-2: #636466;
   --color-grey-3: #6c7983;
   --color-grey-4: #56546a;
-  --color-grey-5: #4b525e;
+  --color-grey-5: #989ea7;
   --color-grey-6: #12181b;
   --br-sm-2: 14px;
   --box-shadow-1: 0 3px 15px rgba(0, 0, 0, 0.3);
@@ -518,13 +518,13 @@ section {
 
 .timeline .timeline-item {
   position: relative;
-  padding-left: 3rem;
+  padding-left: 1.5rem;
   border-left: 1px solid var(--color-grey-5);
 }
 
 .timeline .timeline-item .tl-icon {
   position: absolute;
-  left: -30px;
+  left: -55px;
   top: 0;
   background-color: var(--color-secondary);
   width: 50px;
@@ -533,11 +533,13 @@ section {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
-  padding: 15px;
 }
 
 .timeline .timeline-item .tl-icon i {
   font-size: 1.3rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .timeline .timeline-item .tl-duration {
@@ -587,7 +589,7 @@ section {
 }
 
 .portfolios .portfolio-item img {
-  width: 100%;
+  width: auto;
   height: 400px;
   -o-object-fit: cover;
      object-fit: cover;

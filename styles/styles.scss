@@ -267,14 +267,14 @@ ul li {
     padding-left: 4rem;
     padding-right: 10rem;
     padding-top: 3.5rem;
-    padding-bottom: 5rem;
+    padding-bottom: 2rem;
     .right-about{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-gap: 1rem;
         .about-item{
-            border: 1px solid var(--color-grey-5);
-            border-radius: 3px;
+            border: 2px solid var(--color-grey-5);
+            border-radius: 8px;
             transition: all .4s ease-in-out;
             box-shadow: 1px 2px 15px rgba(0, 0, 0, 0.1);
             &:hover{
@@ -297,7 +297,7 @@ ul li {
                     position: relative;
                     text-transform: uppercase;
                     font-size: 1.0rem;
-                    color: var(--color-white);
+                    color: black;
                     letter-spacing: 2px;
                     text-align: justify;
                     &::before{
@@ -327,6 +327,7 @@ ul li {
             font-size: 2rem;
             text-transform: uppercase;
             text-align: center;
+            color: #12181b;
         }
     }
 }
@@ -334,8 +335,11 @@ ul li {
 
 
 .about-stats{
-    padding-bottom: 4rem;
+    padding-bottom: 2rem;
     padding-right: 10rem;
+    .stat-title{
+        color: #000;
+    }
     .progress-bars{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -343,15 +347,18 @@ ul li {
         .progress-bar{
             display: flex;
             flex-direction: column;
+            background-color: white;
             .prog-title{
                 text-transform: uppercase;
                 font-weight: 500;
+                color: var(--color-secondary);
+                text-align: center;
             }
             .progress-con{
                 display: flex;
                 align-items: center;
                 .prog-text{
-                    color: var(--color-grey-2);
+                    color: red;
                 }
                 .progress{
                     width: 100%;
@@ -368,16 +375,16 @@ ul li {
                         transition: all .4s ease-in-out;
                         width: 60%;
                     }
-                    .html{
+                    .grupos{
                         width: 90%;
                     }
-                    .js{
-                        width: 60%;
+                    .pensamiento{
+                        width: 80%;
                     }
-                    .react {
-                        width: 30%;
+                    .lectura{
+                        width: 90%;
                     }
-                    .flutter{
+                    .escritura{
                         width: 80%;
                     }
                 }
@@ -389,8 +396,11 @@ ul li {
     text-transform: uppercase;
     font-size: 1.4rem;
     text-align: center;
-    padding: 3.5rem 0;
+    padding: 2.5rem 0;
     position: relative;
+    .h4{
+        padding-top: 1rem;
+    }
 
     &::before {
         content: '';
@@ -460,7 +470,8 @@ ul li {
 
 //Portfolio
 .port-text{
-    padding: 2rem;
+    padding-top: 3rem;
+    padding-right: 10rem;
     text-align: center;
     color: black;
 }
@@ -618,6 +629,7 @@ ul li {
 .contact-icon {
     display:  flex  ;
     margin-top: 2rem;
+    padding-right: 10rem;
     align-items: center;
     justify-content: center;
     
@@ -652,7 +664,7 @@ ul li {
 }
 .contact-content-con{
     display: flex;
-    padding-top: 3.5rem;
+    padding-top: 1rem;
     padding-right: 10rem;
     .left-contact{
         flex: 2;
@@ -701,9 +713,10 @@ ul li {
 
     .right-contact{
         flex: 3;
-        margin-left: 3rem;
+        
         .input-control{
             margin: 1.5rem 0;
+            grid-template-columns: repeat(3, 1fr);
             input, textarea{
                 border-radius: 30px;
                 font-weight: inherit;
@@ -714,12 +727,12 @@ ul li {
                 border: none;
                 background-color: var(--color-white);
                 width: 100%;
-                color: var(--color-black);
                 resize: none;
             }
         }
         .i-c-2{
             display: flex;
+            grid-template-columns: repeat(3, 2fr);
             :last-child{
                 margin-left: 1.5rem;
             }
@@ -729,9 +742,17 @@ ul li {
             justify-content: flex-start;
             
         }
+        .email-btn{
+            display: flex;
+            margin:auto;
+            border-radius: 30px;
+            // padding-inline: 2rem;
+            // max-width: 20rem;
+            align-items: center;
+            justify-content: center;
+        }
     }
 }
-
 
 /*independent-content*/ 
 .btn-con{
@@ -782,7 +803,9 @@ ul li {
 
 .main-title{
     text-align: center;
-    padding-top: 2rem;
+    padding-right: 10rem;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
     h2{
         position: relative;
         text-transform: uppercase;

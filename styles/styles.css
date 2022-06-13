@@ -342,7 +342,7 @@ ul li {
   padding-left: 4rem;
   padding-right: 10rem;
   padding-top: 3.5rem;
-  padding-bottom: 5rem;
+  padding-bottom: 2rem;
 }
 
 .about-container .right-about {
@@ -354,8 +354,8 @@ ul li {
 }
 
 .about-container .right-about .about-item {
-  border: 1px solid var(--color-grey-5);
-  border-radius: 3px;
+  border: 2px solid var(--color-grey-5);
+  border-radius: 8px;
   -webkit-transition: all .4s ease-in-out;
   transition: all .4s ease-in-out;
   -webkit-box-shadow: 1px 2px 15px rgba(0, 0, 0, 0.1);
@@ -393,7 +393,7 @@ ul li {
   position: relative;
   text-transform: uppercase;
   font-size: 1.0rem;
-  color: var(--color-white);
+  color: black;
   letter-spacing: 2px;
   text-align: justify;
 }
@@ -423,11 +423,16 @@ ul li {
   font-size: 2rem;
   text-transform: uppercase;
   text-align: center;
+  color: #12181b;
 }
 
 .about-stats {
-  padding-bottom: 4rem;
+  padding-bottom: 2rem;
   padding-right: 10rem;
+}
+
+.about-stats .stat-title {
+  color: #000;
 }
 
 .about-stats .progress-bars {
@@ -446,11 +451,14 @@ ul li {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  background-color: white;
 }
 
 .about-stats .progress-bars .progress-bar .prog-title {
   text-transform: uppercase;
   font-weight: 500;
+  color: var(--color-secondary);
+  text-align: center;
 }
 
 .about-stats .progress-bars .progress-bar .progress-con {
@@ -463,7 +471,7 @@ ul li {
 }
 
 .about-stats .progress-bars .progress-bar .progress-con .prog-text {
-  color: var(--color-grey-2);
+  color: red;
 }
 
 .about-stats .progress-bars .progress-bar .progress-con .progress {
@@ -485,19 +493,19 @@ ul li {
   width: 60%;
 }
 
-.about-stats .progress-bars .progress-bar .progress-con .progress .html {
+.about-stats .progress-bars .progress-bar .progress-con .progress .grupos {
   width: 90%;
 }
 
-.about-stats .progress-bars .progress-bar .progress-con .progress .js {
-  width: 60%;
+.about-stats .progress-bars .progress-bar .progress-con .progress .pensamiento {
+  width: 80%;
 }
 
-.about-stats .progress-bars .progress-bar .progress-con .progress .react {
-  width: 30%;
+.about-stats .progress-bars .progress-bar .progress-con .progress .lectura {
+  width: 90%;
 }
 
-.about-stats .progress-bars .progress-bar .progress-con .progress .flutter {
+.about-stats .progress-bars .progress-bar .progress-con .progress .escritura {
   width: 80%;
 }
 
@@ -505,8 +513,12 @@ ul li {
   text-transform: uppercase;
   font-size: 1.4rem;
   text-align: center;
-  padding: 3.5rem 0;
+  padding: 2.5rem 0;
   position: relative;
+}
+
+.stat-title .h4 {
+  padding-top: 1rem;
 }
 
 .stat-title::before {
@@ -589,7 +601,8 @@ ul li {
 }
 
 .port-text {
-  padding: 2rem;
+  padding-top: 3rem;
+  padding-right: 10rem;
   text-align: center;
   color: black;
 }
@@ -804,6 +817,7 @@ ul li {
   display: -ms-flexbox;
   display: flex;
   margin-top: 2rem;
+  padding-right: 10rem;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -858,7 +872,7 @@ ul li {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding-top: 3.5rem;
+  padding-top: 1rem;
   padding-right: 10rem;
 }
 
@@ -923,11 +937,12 @@ ul li {
   -webkit-box-flex: 3;
       -ms-flex: 3;
           flex: 3;
-  margin-left: 3rem;
 }
 
 .contact-content-con .right-contact .input-control {
   margin: 1.5rem 0;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
 }
 
 .contact-content-con .right-contact .input-control input, .contact-content-con .right-contact .input-control textarea {
@@ -940,7 +955,6 @@ ul li {
   border: none;
   background-color: var(--color-white);
   width: 100%;
-  color: var(--color-black);
   resize: none;
 }
 
@@ -948,6 +962,8 @@ ul li {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-grid-columns: (2fr)[3];
+      grid-template-columns: repeat(3, 2fr);
 }
 
 .contact-content-con .right-contact .i-c-2 :last-child {
@@ -961,6 +977,20 @@ ul li {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
+}
+
+.contact-content-con .right-contact .email-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: auto;
+  border-radius: 30px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 /*independent-content*/
@@ -1032,7 +1062,9 @@ ul li {
 
 .main-title {
   text-align: center;
-  padding-top: 2rem;
+  padding-right: 10rem;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
 }
 
 .main-title h2 {

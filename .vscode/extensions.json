@@ -1,6 +1,7 @@
 {
     "recommendations": [
         "syler.sass-indented",
-        "ritwickdey.live-sass"
+        "ritwickdey.live-sass",
+        "MS-CEINTL.vscode-language-pack-es"
     ]
 }
